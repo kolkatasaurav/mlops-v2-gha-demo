@@ -33,8 +33,8 @@ jobs:
       needs: [get-config,register-environment,register-dataset]
       uses: Azure/mlops-templates/.github/workflows/create-compute.yml@main
       with:
-        cluster_name: cpu-cluster
-        size: Standard_DS3_v2
+        cluster_name: cpu-cluster52536729
+        size: Standard_E4s_v3
         min_instances: 0
         max_instances: 4
         cluster_tier: low_priority
